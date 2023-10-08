@@ -21,3 +21,23 @@ It is a project management tool which consists of four components:
 For this project, end result would be a dashboard, and success criteria would be increasing the sales using cost optimization, giving a clear idea while saving the manager's time.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/grid.JPG?raw=true)
+
+## Prepare
+The data used in this project is from 2017 to 2020 and was downloaded from kaggle [link](https://www.kaggle.com/datasets/mohdsuhailmasroor/atliq-hardware/data). The data consists of the following tables
+1. customers: stores the information of customers
+2. dates: stores the dates
+3. markets: stores the information of various offices
+4. products: stores the information of the products
+5. transactions: stores the main base of the dataset where all the tables join and calculate the total revenue and sales
+
+#### Data Security and Integrity
+
+No personal information of customers and employees is involved.
+The original file is backed up with an extra copy in another folder.
+
+## Process
+
+**Step1.** I create a dataset in MySQL named "sales" and imported all the tables.
+
+
+
