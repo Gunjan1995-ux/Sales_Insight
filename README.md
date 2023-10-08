@@ -42,30 +42,62 @@ The original file is backed up with an extra copy in another folder.
 The data had to be processed before it was ready for analysis. This includes cleaning, transforming, and constantly validating the data to ensure it is clean and ready for analysis.
 
 This included first checking the how data looks. Used SQL queries as follows:
+
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/1.JPG?raw=true)
 
-In the **'transactions** table, I found some unwanted values like the sales amount column has '-1' and the currency column has 'USD' value. 
+Found a few unwanted data in **'markets'** tables, as the sales manager is only interested in the Indian market.
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/2.JPG?raw=true)
+
+In the **'transactions'** table, I found some unwanted values like the sales amount column has '-1' and the currency column has 'USD' value. 
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/4.JPG?raw=true)
 
 Checked if there were any transactions for New York and Paris, as the sales manager only is looking for transactions done in India. None were found.
+
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/3.JPG?raw=true)
 
+Now, I connected MySQL to the PowerBI Desktop
 
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/10.png?raw=true)
+
+After this, I loaded all the tables from the database. This load option will connect with the SQL and pull all the records into the PowerBI environment.
+
+The schema below shows the relationship between the tables, this schema is known as **Star Schema**
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/11.JPG?raw=true)
+
+Now, I did some cleaning the unwanted data I found in the **'markets'** table is removed.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/12.JPG?raw=true)
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/13.JPG?raw=true)
+
+Removed sales amount values less than or equal to '0' for **' transaction table'**.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/14.JPG?raw=true)
+
+Also converted USD currency to INR
+
+
+
+Similarly checked other columns to 
 
 ## Analyze
 
 For some basic analysis, I used SQL to find out transactions of a particular year which is joined by the date table.
+
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/5.JPG?raw=true)
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/6.JPG?raw=true)
 
 I can calculate the total revenue of a particular year with the following queries
+
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/7.JPG?raw=true)
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/8.JPG?raw=true)
 
 I can also find out the business you did in a particular year (eg. 2020 ) and city (eg. Mumbai their market code is Mark002)
+
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/8.JPG?raw=true)
 
 
