@@ -22,4 +22,4 @@ For this project, end result would be a dashboard, and success criteria would be
 
 ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
 
-
+![Alt text](/../main/Screenshots/grid.JPG?raw=true "Optional Title")
