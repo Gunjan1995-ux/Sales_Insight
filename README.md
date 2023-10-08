@@ -20,6 +20,4 @@ It is a project management tool which consists of four components:
 
 For this project, end result would be a dashboard, and success criteria would be increasing the sales using cost optimization, giving a clear idea while saving the manager's time.
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
-
-![Alt text](/../main/Screenshots/grid.JPG?raw=true "Optional Title")
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/grid.JPG?raw=true)
