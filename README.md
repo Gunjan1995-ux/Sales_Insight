@@ -23,12 +23,14 @@ For this project, end result would be a dashboard, and success criteria would be
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/grid.JPG?raw=true)
 
 ## Prepare
-The data used in this project is from 2017 to 2020 and was downloaded from kaggle [link](https://www.kaggle.com/datasets/mohdsuhailmasroor/atliq-hardware/data). The data consists of the following tables
+The data used in this project is from 2017 to 2020 and was downloaded from [here](https://codebasics.io/resources/sales-insights-data-analysis-project). The dataset is also available on Kaggle [link](https://www.kaggle.com/datasets/mohdsuhailmasroor/atliq-hardware/data). The data consists of the following tables
 1. customers: stores the information of customers
 2. dates: stores the dates
 3. markets: stores the information of various offices
 4. products: stores the information of the products
 5. transactions: stores the main base of the dataset where all the tables join and calculate the total revenue and sales
+
+I used MySQL and PowerBI for this project.
 
 #### Data Security and Integrity
 
@@ -37,7 +39,35 @@ The original file is backed up with an extra copy in another folder.
 
 ## Process
 
-**Step1.** I create a dataset in MySQL named "sales" and imported all the tables.
+The data had to be processed before it was ready for analysis. This includes cleaning, transforming, and constantly validating the data to ensure it is clean and ready for analysis.
+
+This included first checking the how data looks. Used SQL queries as follows:
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/1.JPG?raw=true)
+
+In the **'transactions** table, I found some unwanted values like the sales amount column has '-1' and the currency column has 'USD' value. 
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/4.JPG?raw=true)
+
+Checked if there were any transactions for New York and Paris, as the sales manager only is looking for transactions done in India. None were found.
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/3.JPG?raw=true)
+
+
+
+## Analyze
+
+For some basic analysis, I used SQL to find out transactions of a particular year which is joined by the date table.
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/5.JPG?raw=true)
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/6.JPG?raw=true)
+
+I can calculate the total revenue of a particular year with the following queries
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/7.JPG?raw=true)
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/8.JPG?raw=true)
+
+I can also find out the business you did in a particular year (eg. 2020 ) and city (eg. Mumbai their market code is Mark002)
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/8.JPG?raw=true)
+
 
 
 
