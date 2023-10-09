@@ -45,18 +45,7 @@ This included first checking the how data looks. Used SQL queries as follows:
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/1.JPG?raw=true)
 
-Found a few unwanted data in **'markets'** tables, as the sales manager is only interested in the Indian market.
-![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/2.JPG?raw=true)
-
-In the **'transactions'** table, I found some unwanted values like the sales amount column has '-1' and the currency column has 'USD' value. 
-
-![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/4.JPG?raw=true)
-
-Checked if there were any transactions for New York and Paris, as the sales manager only is looking for transactions done in India. None were found.
-
-![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/3.JPG?raw=true)
-
-Now, I connected MySQL to the PowerBI Desktop
+As I am using MySQL and PowerBI side by side. I connected MySQL to the PowerBI Desktop. 
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/10.png?raw=true)
 
@@ -66,11 +55,18 @@ The schema below shows the relationship between the tables, this schema is known
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/11.JPG?raw=true)
 
+Found a few unwanted data in **'markets'** tables, as the sales manager is only interested in the Indian market.
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/2.JPG?raw=true)
+
 Now, I did some cleaning the unwanted data I found in the **'markets'** table is removed.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/12.JPG?raw=true)
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/13.JPG?raw=true)
+
+In the **'transactions'** table, I found some unwanted values like the sales amount column has '-1' and the currency column has 'USD' value. 
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/4.JPG?raw=true)
 
 Removed sales amount values less than or equal to '0' for **' transaction table'**.
 
@@ -78,9 +74,16 @@ Removed sales amount values less than or equal to '0' for **' transaction table'
 
 Also converted USD currency to INR
 
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/15.JPG?raw=true)
+
+Similarly checked other columns in the **transactions** column, and nothing needs to be changed.
 
 
-Similarly checked other columns to 
+
+Checked if there were any transactions for New York and Paris, as the sales manager only is looking for transactions done in India. None were found.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/3.JPG?raw=true)
+
 
 ## Analyze
 
