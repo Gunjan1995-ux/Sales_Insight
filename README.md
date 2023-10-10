@@ -41,24 +41,23 @@ The original file is backed up with an extra copy in another folder.
 
 The data had to be processed before it was ready for analysis. This includes cleaning, transforming, and constantly validating the data to ensure it is clean and ready for analysis.
 
-This included first checking the how data looks. Used SQL queries as follows:
-
-![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/1.JPG?raw=true)
+This included first checking the how data looks. Used SQL queries as follows using simple SQL statements like "Select * from table name;"
 
 As I am using MySQL and PowerBI side by side. I connected MySQL to the PowerBI Desktop. 
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/10.png?raw=true)
 
-After this, I loaded all the tables from the database. This load option will connect with the SQL and pull all the records into the PowerBI environment.
+After this, I loaded all the tables from the database. 
 
-The schema below shows the relationship between the tables, this schema is known as **Star Schema**
+The schema below shows the relationship between the tables, this also is known as **Star Schema**.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/11.JPG?raw=true)
 
-Found a few unwanted data in **'markets'** tables, as the sales manager is only interested in the Indian market.
+Now, I found a few unwanted data in **'markets'** tables, as the sales manager is only interested in the Indian market.
+
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/2.JPG?raw=true)
 
-Now, I did some cleaning the unwanted data I found in the **'markets'** table is removed.
+I did some cleaning, I removed this unwanted data in PowerBI.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/12.JPG?raw=true)
 
@@ -86,7 +85,6 @@ After this, also removed duplicates from the **transactions** table.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/18.JPG?raw=true)
 
-
 Checked if there were any transactions for New York and Paris, as the sales manager only is looking for transactions done in India. None were found.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/3.JPG?raw=true)
@@ -109,7 +107,7 @@ I can also find out the business you did in a particular year (eg. 2020 ) and ci
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/8.JPG?raw=true)
 
-In PowerBI, created two measures to calculate **revenue** and **sales quantity** which show the total revenue and total sales made, respectively.
+In PowerBI, two measures were created to calculate **revenue** and **sales quantity** which show the total revenue and total sales made, respectively.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/21.JPG?raw=true)
 
