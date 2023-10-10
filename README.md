@@ -57,7 +57,7 @@ Now, I found a few unwanted data in **'markets'** tables, as the sales manager i
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/2.JPG?raw=true)
 
-I did some cleaning, I removed this unwanted data in PowerBI.
+To remove these unwanted rows I went into PowerBI used a filter by unselecting 'blank' from the **'zone'** column
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/12.JPG?raw=true)
 
