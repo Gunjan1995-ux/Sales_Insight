@@ -138,6 +138,15 @@ Next, I made an analysis of the revenue made by the company over the past 4 year
 A dashboard is created according to the requirements. What the company wants to look for and what is more important for the company is taken into consideration and then the dashboard is created. There can be a number of variations to create a dashboard. Generally, the dashboard should look understandable and easy to access.
 
 
-![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/20.JPG?raw=true)
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/dashboard.JPG?raw=true)
 
-In this dashboard, we can check revenue and sales by year, month, city,  and customers.
+
+## Act:
+
+We have observed the sales insights from the interactive dashboard.
+
+It consists of Total Revenue, Total Sales Quantity, Revenue by market, Sales Quantity by market, Top customers ,Top products sold and also graph of Revenue by year.
+
+Finally the sales director can visualize the sales insights from this dashboard.
+
+
