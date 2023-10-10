@@ -76,14 +76,20 @@ Also converted USD currency to INR
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/15.JPG?raw=true)
 
-Similarly checked other columns in the **transactions** column, and nothing needs to be changed.
+Also, found that there were duplicate currencies. That could be a special character present at the end of the string. Used **clean** from PowerBI to remove those characters.
 
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/16.JPG?raw=true)
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/17.JPG?raw=true)
+
+After this, also removed duplicates from the **transactions** table.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/18.JPG?raw=true)
 
 
 Checked if there were any transactions for New York and Paris, as the sales manager only is looking for transactions done in India. None were found.
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/3.JPG?raw=true)
-
 
 ## Analyze
 
@@ -103,6 +109,37 @@ I can also find out the business you did in a particular year (eg. 2020 ) and ci
 
 ![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/8.JPG?raw=true)
 
+In PowerBI, created two measures to calculate **revenue** and **sales quantity** which show the total revenue and total sales made, respectively.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/21.JPG?raw=true)
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/22.JPG?raw=true)
+
+Next, Revenue in each city is made, by using columns "market_name" and "currency in INR".
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/23.JPG?raw=true)
+
+And also made an analysis of the total number of sale quantities made in the Market.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/24.JPG?raw=true)
+
+Find out the top 5 customers based on the revenue made for the company.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/25.JPG?raw=true)
+
+And also made an analysis of the top 5 products that were sold in the market.
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/26.JPG?raw=true)
+
+Next, I made an analysis of the revenue made by the company over the past 4 years (2017,2018,2019,2020).
+
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/27.JPG?raw=true)
+
+## Vizualization/Share
+
+A dashboard is created according to the requirements. What the company wants to look for and what is more important for the company is taken into consideration and then the dashboard is created. There can be a number of variations to create a dashboard. Generally, the dashboard should look understandable and easy to access.
 
 
+![alt text]( https://github.com/Gunjan1995-ux/Sales_Insight/blob/main/screenshots/20.JPG?raw=true)
 
+In this dashboard, we can check revenue and sales by year, month, city,  and customers.
